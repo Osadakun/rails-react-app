@@ -50,6 +50,7 @@ test:
 #
 production:
   <<: *default
-  database: react_app_production
-  username: react_app
-  password: <%= ENV['REACT_APP_DATABASE_PASSWORD'] %>
+  database: <%= ENV['APP_DATABASE'] %>
+  username: <%= ENV['APP_DATABASE_USERNAME'] %>
+  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
+  host: <%= ENV['APP_DATABASE_HOST'] %>

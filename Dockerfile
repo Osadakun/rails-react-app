@@ -19,3 +19,10 @@ ADD ./Gemfile.lock $APP_ROOT/Gemfile.lock
 
 RUN bundle install
 ADD . $APP_ROOT
+
+# ローカル開発環境のstart.shの内容をDockerコンテナ上の/start.shにコピー
+COPY start.sh /start.sh
+# Docker側の下記のファイルに実行権限を渡すので権限を変更する
+RUN chmod 744 /start.sh
+# 実行
+CMD ["sh", "/start.sh"]
