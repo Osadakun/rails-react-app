@@ -94,6 +94,10 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
+  Rails.application.configure do
+    config.web_console.permissions = '0.0.0.0/0'
+  end
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
