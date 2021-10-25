@@ -15,6 +15,7 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^17.0.2",
     "react_ujs": "^2.6.1",
     "turbolinks": "^5.2.0",
