@@ -1,4 +1,4 @@
-FROM ruby:2.7.2
+FROM ruby:2.6.3
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
   && apt-get update \
@@ -9,7 +9,7 @@ RUN apt-get update -qq && apt-get install -y build-essential \
   nodejs \
   yarn
 
-RUN mkdir /react
+RUN mkdir /react-app
 
 ENV APP_ROOT /react-app
 WORKDIR $APP_ROOT

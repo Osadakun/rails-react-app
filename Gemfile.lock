@@ -221,7 +221,7 @@ DEPENDENCIES
   capybara (>= 3.26)
   jbuilder (~> 2.7)
   listen (~> 3.3)
-  mysql2 (~> 0.5)
+  mysql2 (~> 0.5.3)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)
@@ -236,7 +236,7 @@ DEPENDENCIES
   webpacker (~> 5.0)
 
 RUBY VERSION
-   ruby 2.7.2p137
+   ruby 2.6.3p62
 
 BUNDLED WITH
-   2.1.4
+   2.2.28
